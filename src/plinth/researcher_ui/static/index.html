@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plinth Researcher UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div class="brand-title">Researcher UI</div>
+        <div class="brand-sub">analysis surface for pipeline runs</div>
+      </div>
+
+      <div class="nav-label">Entry</div>
+      <button class="nav-btn active" data-view="runs"><span class="nav-dot"></span><span>Runs</span></button>
+
+      <div class="nav-label">Inspect</div>
+      <button class="nav-btn" data-view="manifest"><span class="nav-dot"></span><span>Manifest &amp; schema</span></button>
+      <button class="nav-btn" data-view="ledger"><span class="nav-dot"></span><span>Ledger lineage</span></button>
+      <button class="nav-btn" data-view="failures"><span class="nav-dot"></span><span>Failure debug</span></button>
+      <button class="nav-btn" data-view="artifacts"><span class="nav-dot"></span><span>Artifacts</span></button>
+
+      <div class="nav-label">Compare</div>
+      <button class="nav-btn" data-view="compare"><span class="nav-dot"></span><span>Run comparison</span></button>
+
+      <div class="sidebar-footer">
+        <div id="active-run-label">no run selected</div>
+        <div id="compare-session-label">comparison: none</div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <div class="topbar-kicker" id="top-kicker">Plinth</div>
+          <div class="topbar-title" id="top-title">Choose runs to analyze</div>
+        </div>
+        <div class="toolbar" id="top-actions"></div>
+      </header>
+
+      <div class="content" id="content">
+        <div class="loading">Loading…</div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/app.js" type="module"></script>
+</body>
+</html>

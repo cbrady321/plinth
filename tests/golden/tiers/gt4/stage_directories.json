@@ -1,0 +1,12 @@
+{
+  "01_gt4_root": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "02_golden_exceptional": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ]
+}

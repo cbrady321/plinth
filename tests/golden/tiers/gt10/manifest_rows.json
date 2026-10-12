@@ -1,0 +1,20 @@
+[
+  {
+    "batch": 1,
+    "branch_a": "a",
+    "branch_b": "b",
+    "entity_id": "item_a",
+    "file_path": "files/a.bin",
+    "filename": "a.bin",
+    "slot": null
+  },
+  {
+    "batch": 1,
+    "branch_a": "a",
+    "branch_b": "b",
+    "entity_id": "item_b",
+    "file_path": "files/b.bin",
+    "filename": "b.bin",
+    "slot": null
+  }
+]

@@ -1,0 +1,51 @@
+name: Test
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,ui]"
+
+      - name: Ruff
+        run: ruff check src/plinth tests/ scripts/ examples/
+
+      - name: Pipeline config schema
+        run: python scripts/validate_pipeline_configs.py
+
+      - name: Public surface stubs
+        run: python scripts/validate_public_surface.py
+
+      - name: Ledger write sites
+        run: python scripts/validate_ledger_write_sites.py
+
+      - name: Expectation matrix
+        run: python scripts/validate_expectation_matrix.py --check-scenarios
+
+      - name: Import boundary
+        run: lint-imports
+
+      - name: Mypy
+        run: mypy src/plinth tests/typing --follow-imports=silent
+
+      - name: Pytest (fast)
+        run: pytest tests/ -q -m "not property"
+
+      - name: Pytest (property)
+        run: pytest tests/ -q -m property

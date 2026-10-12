@@ -1,0 +1,9 @@
+[
+  {
+    "batch": 1,
+    "entity_id": "item_a",
+    "file_path": "files/a.bin",
+    "filename": "a.bin",
+    "slot": null
+  }
+]

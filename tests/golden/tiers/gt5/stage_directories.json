@@ -1,0 +1,34 @@
+{
+  "01_gt5_root": [],
+  "02_golden_exceptional_structural": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml",
+    "summary.csv"
+  ],
+  "03_golden_noop": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "04_golden_branch_parallel": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "04a_golden_branch_a": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "04b_golden_branch_b": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "05_golden_join_filter": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ]
+}

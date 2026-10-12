@@ -1,0 +1,15 @@
+schema_format: 1
+unique_key: []
+identity:
+  entity_key: entity_id
+  hierarchy_keys: []
+  disambiguator: ''
+  column_aliases: {}
+  key_types: {}
+  key_defaults: {}
+columns:
+  child_count: int
+media:
+  path_column: file_path
+  subdir: files
+  name_column: ''

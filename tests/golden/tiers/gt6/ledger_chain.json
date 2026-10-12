@@ -1,0 +1,23 @@
+[
+  {
+    "files_processed": 2,
+    "input_hash": "f3f9c918928dc2136d86a640ef5d303c981a2a731619d633979788936e7915c9",
+    "output_hash": "4378825f81d72eeb447fc7b733d1c054973d0c259aaaec0120ecde55e6fae6bc",
+    "params_hash": "cf81895613119daa414ea96148111f327b5a78a6ed8cc985fddd6a18728f247d",
+    "stage_name": "golden_branch_a"
+  },
+  {
+    "files_processed": 2,
+    "input_hash": "f3f9c918928dc2136d86a640ef5d303c981a2a731619d633979788936e7915c9",
+    "output_hash": "7355f3121775bdf6a8723953384627fbaea2338edef74b6c0b8fc4c02a3f98ee",
+    "params_hash": "cf81895613119daa414ea96148111f327b5a78a6ed8cc985fddd6a18728f247d",
+    "stage_name": "golden_branch_b"
+  },
+  {
+    "files_processed": 2,
+    "input_hash": "a2dd38a7d3f3355d7bc3a1d2b635df3fc10b5bc6a6a25e719c2a4f1677ecae8f",
+    "output_hash": "a2dd38a7d3f3355d7bc3a1d2b635df3fc10b5bc6a6a25e719c2a4f1677ecae8f",
+    "params_hash": "cf81895613119daa414ea96148111f327b5a78a6ed8cc985fddd6a18728f247d",
+    "stage_name": "golden_join_filter"
+  }
+]

@@ -1,0 +1,23 @@
+name: gt2_sequential
+version: "1.0"
+input_source: dataset
+dag:
+  type: sequential
+  name: gt2_root
+  children:
+    - type: stage
+      name: allowlist_filter
+    - type: stage
+      name: tag_category
+    - type: stage
+      name: golden_filter_b
+params:
+  allowlist_filter:
+    allow:
+      - a.bin
+      - b.bin
+  tag_category:
+    default_category: gt2_category
+  golden_filter_b:
+    allow:
+      - a.bin

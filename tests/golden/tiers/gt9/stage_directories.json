@@ -1,0 +1,14 @@
+{
+  "01_gt9_root": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "02_golden_read_touch": [
+    "a.bin",
+    "b.bin",
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ]
+}

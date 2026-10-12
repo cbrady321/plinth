@@ -1,0 +1,45 @@
+[importlinter]
+root_package = plinth
+include_external_packages = True
+
+[importlinter:contract:1]
+name = blocks-no-executors
+type = forbidden
+source_modules =
+    plinth.blocks
+forbidden_modules =
+    plinth.runtime.executor
+    plinth.runtime.exceptional_executor
+allow_indirect_imports = true
+
+[importlinter:contract:2]
+name = pipeline-orchestration-only
+type = forbidden
+source_modules =
+    plinth.runtime.pipeline
+forbidden_modules =
+    plinth.runtime.stage_processor
+    plinth.runtime.propagation_engine
+allow_indirect_imports = true
+
+[importlinter:contract:3]
+name = runtime-layering
+type = layers
+layers =
+    plinth.runtime.pipeline : plinth.runtime.pipeline_cleanup
+    plinth.runtime.executor : plinth.runtime.exceptional_executor
+    plinth.runtime.stage_processor
+    plinth.runtime.outcome_handler : plinth.runtime.propagation_engine : plinth.runtime.intent_conformance
+    plinth.runtime.hashing : plinth.runtime.hash_chain_validator : plinth.runtime.ledger_writer : plinth.runtime.manifest_policy : plinth.runtime.row_count_guard : plinth.runtime.row_failure_policy
+
+[importlinter:contract:4]
+name = library-domain-free
+type = forbidden
+source_modules =
+    plinth
+forbidden_modules =
+    torch
+    tensorflow
+    jax
+    sklearn
+    scipy

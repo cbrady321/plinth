@@ -1,0 +1,24 @@
+{
+  "01_gt2_root": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "02_allowlist_filter": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "03_tag_category": [
+    "a.bin",
+    "b.bin",
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "04_golden_filter_b": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ]
+}

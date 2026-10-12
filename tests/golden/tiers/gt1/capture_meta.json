@@ -1,0 +1,5 @@
+{
+  "experiment_name": "golden_capture",
+  "final_stage_dir": "02_allowlist_filter",
+  "capture_root": "tests/fixtures/golden_pipeline/work/data/pipeline/runs/golden_capture/01_golden_root"
+}

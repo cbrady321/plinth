@@ -1,0 +1,24 @@
+.DS_Store
+venv/
+__pycache__/
+data/pipeline/runs/
+data/dataset/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+tests/fixtures/golden_pipeline/work/
+tests/fixtures/golden_pipeline/**/export/
+**/data/*/export/
+.mypy_cache/
+.ruff_cache/
+.import_linter_cache/
+dist/
+build/
+.idea/
+.venv/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml

@@ -1,0 +1,27 @@
+{
+  "01_gt10_root": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "02_split": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "02a_golden_branch_a": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "02b_golden_branch_b": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ],
+  "03_golden_join_filter": [
+    "dataset_schema.yaml",
+    "manifest.csv",
+    "metadata_ledger.yaml"
+  ]
+}

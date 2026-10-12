@@ -1,0 +1,12 @@
+name: gt9_always_propagate
+version: "1.0"
+input_source: dataset
+always_propagate: true
+dag:
+  type: sequential
+  name: gt9_root
+  children:
+    - type: stage
+      name: golden_read_touch
+params:
+  golden_read_touch: {}

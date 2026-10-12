@@ -1,0 +1,23 @@
+[
+  {
+    "files_processed": 2,
+    "input_hash": "f3f9c918928dc2136d86a640ef5d303c981a2a731619d633979788936e7915c9",
+    "output_hash": "494d8f3d6436239e4cf206edffcf6a7c51ef7b3ad33e165ad81823582e32f297",
+    "params_hash": "90561aebd2ef6301e4bb51fd97338c19c35b93cc08d49c5d09eb688bda081a81",
+    "stage_name": "allowlist_filter"
+  },
+  {
+    "files_processed": 2,
+    "input_hash": "494d8f3d6436239e4cf206edffcf6a7c51ef7b3ad33e165ad81823582e32f297",
+    "output_hash": "f690c18b79198a0efd9a37bb2f720fffef3e55acd44b2db2e7f0987d11cecda1",
+    "params_hash": "cf81895613119daa414ea96148111f327b5a78a6ed8cc985fddd6a18728f247d",
+    "stage_name": "golden_expand_rows"
+  },
+  {
+    "files_processed": 2,
+    "input_hash": "f690c18b79198a0efd9a37bb2f720fffef3e55acd44b2db2e7f0987d11cecda1",
+    "output_hash": "c9df04cf24fa4eb80c53a21a023bac8b891160529ea1c517cd6302941509ea49",
+    "params_hash": "cf81895613119daa414ea96148111f327b5a78a6ed8cc985fddd6a18728f247d",
+    "stage_name": "golden_aggregate_entities"
+  }
+]

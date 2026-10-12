@@ -1,0 +1,11 @@
+name: gt4_exceptional
+version: "1.0"
+input_source: dataset
+dag:
+  type: sequential
+  name: gt4_root
+  children:
+    - type: stage
+      name: golden_exceptional
+params:
+  golden_exceptional: {}

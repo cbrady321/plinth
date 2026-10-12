@@ -1,0 +1,14 @@
+[
+  {
+    "batch": 1,
+    "child_count": 2,
+    "entity_id": "item_a",
+    "slot": null
+  },
+  {
+    "batch": 1,
+    "child_count": 2,
+    "entity_id": "item_b",
+    "slot": null
+  }
+]

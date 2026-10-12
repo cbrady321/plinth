@@ -1,0 +1,26 @@
+name: gt6_deep_nest
+version: "1.0"
+input_source: dataset
+dag:
+  type: sequential
+  name: gt6_root
+  children:
+    - type: sequential
+      name: outer_seq
+      children:
+        - type: parallel
+          name: mid_par
+          children:
+            - type: sequential
+              name: branch_seq
+              children:
+                - type: stage
+                  name: golden_branch_a
+            - type: stage
+              name: golden_branch_b
+    - type: stage
+      name: golden_join_filter
+params:
+  golden_branch_a: {}
+  golden_branch_b: {}
+  golden_join_filter: {}
